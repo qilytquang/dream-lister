@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		740B100C1DFD90AD00A2F093 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B100B1DFD90AD00A2F093 /* MaterialView.swift */; };
+		740B100E1DFD944800A2F093 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B100D1DFD944800A2F093 /* ItemCell.swift */; };
 		74F55D8D1DFD105D00D5C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F55D8C1DFD105D00D5C8FF /* AppDelegate.swift */; };
 		74F55D8F1DFD105D00D5C8FF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F55D8E1DFD105D00D5C8FF /* MainVC.swift */; };
 		74F55D921DFD105D00D5C8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F55D901DFD105D00D5C8FF /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		740B100B1DFD90AD00A2F093 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		740B100D1DFD944800A2F093 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		74F55D891DFD105D00D5C8FF /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F55D8C1DFD105D00D5C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F55D8E1DFD105D00D5C8FF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				740B100B1DFD90AD00A2F093 /* MaterialView.swift */,
+				740B100D1DFD944800A2F093 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740B100E1DFD944800A2F093 /* ItemCell.swift in Sources */,
 				74F55DAE1DFD166100D5C8FF /* Image+CoreDataProperties.swift in Sources */,
 				74F55DAC1DFD166100D5C8FF /* Item+CoreDataProperties.swift in Sources */,
 				74F55DAF1DFD166100D5C8FF /* ItemType+CoreDataClass.swift in Sources */,
