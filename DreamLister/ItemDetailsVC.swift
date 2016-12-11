@@ -18,6 +18,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var detailsField: CustomTextField!
     
     var stores = [Store]()
+    var itemToEdit: Item?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,28 +30,6 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         storePicker.delegate = self
         storePicker.dataSource = self
         
-//        let store = Store(context: context)
-//        store.name = "Best Buy"
-//        
-//        let store2 = Store(context: context)
-//        store2.name = "Tesla Dealership"
-//        
-//        let store3 = Store(context: context)
-//        store3.name = "Frys Electronics"
-//        
-//        let store4 = Store(context: context)
-//        store4.name = "Target"
-//        
-//        let store5 = Store(context: context)
-//        store5.name = "Amazon"
-//        
-//        let store6 = Store(context: context)
-//        store6.name = "K Mart"
-//        
-//        let store7 = Store(context: context)
-//        store7.name = "Dien May Xanh"
-//        
-//        ad.saveContext()
         getStores()
     }
     
@@ -76,12 +55,44 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         // update when selected
     }
     
+    func createStores() {
+        let store = Store(context: context)
+        store.name = "Best Buy"
+        
+        let store2 = Store(context: context)
+        store2.name = "Tesla Dealership"
+        
+        let store3 = Store(context: context)
+        store3.name = "Frys Electronics"
+        
+        let store4 = Store(context: context)
+        store4.name = "Target"
+        
+        let store5 = Store(context: context)
+        store5.name = "Amazon"
+        
+        let store6 = Store(context: context)
+        store6.name = "K Mart"
+        
+        let store7 = Store(context: context)
+        store7.name = "Dien May Xanh"
+        
+        ad.saveContext()
+    }
+    
     func getStores() {
         
         let fetchRequest: NSFetchRequest<Store> = Store.fetchRequest()
         
         do {
             self.stores = try context.fetch(fetchRequest)
+            
+            // create list stores if no store available
+            if self.stores.count == 0 {
+                createStores()
+                self.stores = try context.fetch(fetchRequest)
+            }
+            
             self.storePicker.reloadAllComponents()
         } catch {
             
@@ -113,7 +124,10 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
     }
     
-    
+    func loadItemData() {
+        
+        
+    }
     
     
     
