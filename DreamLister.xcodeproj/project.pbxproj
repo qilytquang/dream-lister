@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		740B100C1DFD90AD00A2F093 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B100B1DFD90AD00A2F093 /* MaterialView.swift */; };
 		740B100E1DFD944800A2F093 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B100D1DFD944800A2F093 /* ItemCell.swift */; };
+		740B10121DFDC21C00A2F093 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B10111DFDC21C00A2F093 /* CustomTextField.swift */; };
+		740B10141DFDC2A900A2F093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740B10131DFDC2A900A2F093 /* Assets.xcassets */; };
+		740B10161DFDC73B00A2F093 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B10151DFDC73B00A2F093 /* ItemDetailsVC.swift */; };
 		74F55D8D1DFD105D00D5C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F55D8C1DFD105D00D5C8FF /* AppDelegate.swift */; };
 		74F55D8F1DFD105D00D5C8FF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F55D8E1DFD105D00D5C8FF /* MainVC.swift */; };
 		74F55D921DFD105D00D5C8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F55D901DFD105D00D5C8FF /* Main.storyboard */; };
 		74F55D951DFD105D00D5C8FF /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74F55D931DFD105D00D5C8FF /* DreamLister.xcdatamodeld */; };
-		74F55D971DFD105D00D5C8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F55D961DFD105D00D5C8FF /* Assets.xcassets */; };
 		74F55D9A1DFD105D00D5C8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F55D981DFD105D00D5C8FF /* LaunchScreen.storyboard */; };
 		74F55DA91DFD166100D5C8FF /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F55DA11DFD166100D5C8FF /* Store+CoreDataClass.swift */; };
 		74F55DAA1DFD166100D5C8FF /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F55DA21DFD166100D5C8FF /* Store+CoreDataProperties.swift */; };
@@ -28,12 +30,14 @@
 /* Begin PBXFileReference section */
 		740B100B1DFD90AD00A2F093 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		740B100D1DFD944800A2F093 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		740B10111DFDC21C00A2F093 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		740B10131DFDC2A900A2F093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		740B10151DFDC73B00A2F093 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		74F55D891DFD105D00D5C8FF /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F55D8C1DFD105D00D5C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F55D8E1DFD105D00D5C8FF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		74F55D911DFD105D00D5C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74F55D941DFD105D00D5C8FF /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
-		74F55D961DFD105D00D5C8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F55D991DFD105D00D5C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F55D9B1DFD105D00D5C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74F55DA11DFD166100D5C8FF /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -80,9 +84,8 @@
 				74F55DB21DFD168300D5C8FF /* View */,
 				74F55DB31DFD168900D5C8FF /* Controller */,
 				74F55D8C1DFD105D00D5C8FF /* AppDelegate.swift */,
-				74F55D8E1DFD105D00D5C8FF /* MainVC.swift */,
 				74F55D901DFD105D00D5C8FF /* Main.storyboard */,
-				74F55D961DFD105D00D5C8FF /* Assets.xcassets */,
+				740B10131DFDC2A900A2F093 /* Assets.xcassets */,
 				74F55D981DFD105D00D5C8FF /* LaunchScreen.storyboard */,
 				74F55D9B1DFD105D00D5C8FF /* Info.plist */,
 				74F55D931DFD105D00D5C8FF /* DreamLister.xcdatamodeld */,
@@ -107,6 +110,7 @@
 			children = (
 				740B100B1DFD90AD00A2F093 /* MaterialView.swift */,
 				740B100D1DFD944800A2F093 /* ItemCell.swift */,
+				740B10111DFDC21C00A2F093 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -114,6 +118,8 @@
 		74F55DB31DFD168900D5C8FF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				74F55D8E1DFD105D00D5C8FF /* MainVC.swift */,
+				740B10151DFDC73B00A2F093 /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -189,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F55D9A1DFD105D00D5C8FF /* LaunchScreen.storyboard in Resources */,
-				74F55D971DFD105D00D5C8FF /* Assets.xcassets in Resources */,
+				740B10141DFDC2A900A2F093 /* Assets.xcassets in Resources */,
 				74F55D921DFD105D00D5C8FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,10 +216,12 @@
 				74F55DAA1DFD166100D5C8FF /* Store+CoreDataProperties.swift in Sources */,
 				74F55DAD1DFD166100D5C8FF /* Image+CoreDataClass.swift in Sources */,
 				74F55D8F1DFD105D00D5C8FF /* MainVC.swift in Sources */,
+				740B10161DFDC73B00A2F093 /* ItemDetailsVC.swift in Sources */,
 				74F55DB01DFD166100D5C8FF /* ItemType+CoreDataProperties.swift in Sources */,
 				74F55DA91DFD166100D5C8FF /* Store+CoreDataClass.swift in Sources */,
 				74F55D8D1DFD105D00D5C8FF /* AppDelegate.swift in Sources */,
 				74F55D951DFD105D00D5C8FF /* DreamLister.xcdatamodeld in Sources */,
+				740B10121DFDC21C00A2F093 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
