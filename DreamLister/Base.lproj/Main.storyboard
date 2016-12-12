@@ -160,6 +160,9 @@
                                     <constraint firstAttribute="width" constant="100" id="FYi-ag-buO"/>
                                     <constraint firstAttribute="height" constant="100" id="lxY-Qw-FB7"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="awm-Hv-44P" eventType="touchUpInside" id="rKF-xT-jBe"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VO2-aa-q3S" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -244,12 +247,16 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="Cbp-fR-e2b">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="pFo-AL-5C2">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="awm-Hv-44P" id="nkA-85-hX2"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="qEg-lY-jOJ" id="RjH-hn-BjX"/>
                         <outlet property="priceField" destination="pMG-uq-bpV" id="r9F-SY-DlN"/>
                         <outlet property="storePicker" destination="173-Bt-cJf" id="pbw-BZ-E1N"/>
+                        <outlet property="thumbImg" destination="aGV-2D-fOq" id="6qY-Zu-h6H"/>
                         <outlet property="titleField" destination="VO2-aa-q3S" id="6OV-BB-JLh"/>
                     </connections>
                 </viewController>
